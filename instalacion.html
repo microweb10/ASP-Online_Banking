@@ -1,0 +1,32 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Julian Nicolas">
+   <meta name="Copyright" content="© Julian Nicolas">
+   <meta http-equiv="Content-Script-Type" content="JavaScript">
+   <title>PIDIRECT -- Guia de Instalación</title>
+</head>
+
+<body style="background-color: #D8D8D8">
+<p>Los pasos que debemos seguir para instalación de la aplicación son los siguientes.</p>
+<br>
+<p>1. Copiar la carpeta PiDirect en el raiz C:\</p>
+<p>2. Comprobar que tenemos instalado el IIS o el PWS en el equipo, si no es asi, procedemos a la instalacion</p>
+<p>3. Comprobar que tenemos instalado php en el sistema</p>
+<p>4. Configurar el IIS correctamente</p>
+<p>    * En directorio particular pondremos C:\PiDirect </p>
+<p>    * La página de inicio llamada "index.html" la pondremos como documento predeterminado</p>
+<p>    * Dar permisos de ejecución a la base de datos C:\PiDirect\banca.mdb </p>
+<p>    * Para poder ejecutar correctamente el cgi que tenemos en la aplicacion agregaremos una nueva unidad virtual,</p>
+<p>      llamada cgi y le daremos permisos de ejecución.</p>
+<p>5. Configuracion del DSN</p>
+<p>    * A continuación necesitamos un DSN para conectar con la base de datos, nos vamos a </p>
+<p>      Inicio -> Panel de Control -> Herramientas Administrativas -> Orígenes de datos (ODBC)</p>
+<p>      Agregamos el DSN de sistema con el nombre "pidirect", con el driver de Microsoft Access *.mdb, </p>
+<p>      tenemos que enlazarlo con la BD que esta en la ruta C:\PiDirect\banca.mdb </p>
+<br>
+<p>Con ésto tendremos listo nuestro sitio web.</p>
+<center><a href="index.html">VOLVER</a></center>
+</body>
+</html>
